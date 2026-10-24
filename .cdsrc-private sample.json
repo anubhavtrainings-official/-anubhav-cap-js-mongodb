@@ -1,0 +1,13 @@
+{
+  "requires": {
+    "anubhav-mongo": {
+      "[development]": {
+        "url": "CONNECTION_STRING",
+        "credentials": {
+          "user": "Your USER",
+          "password": "YOUR PASS"
+        }
+      }
+    }
+  }
+}
