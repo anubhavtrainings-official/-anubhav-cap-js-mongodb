@@ -1,9 +1,8 @@
 {
   "name": "anubhav-mongo",
   "version": "1.0.0",
-  "type": "module",
   "dependencies": {
-    "@anubhav-cap-js/mongo": "^1.0.2",
+    "@anubhav-cap-js/mongo": "^1.0.3",
     "@sap/cds": "^10"
   },
   "devDependencies": {
