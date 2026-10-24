@@ -1,0 +1,27 @@
+{
+  "name": "anubhav-mongo",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@anubhav-cap-js/mongo": "^1.0.2",
+    "@sap/cds": "^10"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^3"
+  },
+  "cds": {
+      "requires": {
+        "anubhav-mongo": {
+          "dbName": "anubhav-dev",
+          "autoDeploy": true,
+          "[production]": {
+            "destination": "MONGO_ATLAS"
+          }
+        }
+      }
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "private": true
+}
