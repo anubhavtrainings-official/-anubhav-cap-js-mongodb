@@ -3,24 +3,35 @@
   "version": "1.0.0",
   "dependencies": {
     "@anubhav-cap-js/mongo": "^1.0.3",
-    "@sap/cds": "^10"
+    "@sap-cloud-sdk/connectivity": "^4.9.1",
+    "@sap/cds": "^10",
+    "@sap/xssec": "^4"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^3"
+    "@cap-js/sqlite": "^3",
+    "@sap/cds-dk": "^10"
   },
   "cds": {
-      "requires": {
-        "anubhav-mongo": {
-          "dbName": "anubhav-dev",
-          "autoDeploy": true,
-          "[production]": {
-            "destination": "MONGO_ATLAS"
-          }
+    "requires": {
+      "anubhav-mongo": {
+        "dbName": "anubhav-dev",
+        "autoDeploy": true,
+        "replaceMode": true,
+        "[production]": {
+          "destination": "MONGO_ATLAS"
         }
-      }
+      },
+      "[production]": {
+        "auth": "xsuaa"
+      },
+      "destinations": true
+    }
   },
   "scripts": {
     "start": "cds-serve"
   },
-  "private": true
+  "private": true,
+  "sapux": [
+    "app/salesanalytics"
+  ]
 }
