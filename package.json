@@ -28,7 +28,8 @@
     }
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "build:data": "node -e \"require('fs').cpSync('db/data','gen/srv/db/data',{recursive:true})\""
   },
   "private": true,
   "sapux": [
