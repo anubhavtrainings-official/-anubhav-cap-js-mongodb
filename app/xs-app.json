@@ -2,13 +2,13 @@
   "welcomeFile": "salesanalytics/webapp/index.html",
   "authenticationMethod": "route",
   "sessionTimeout": 10,
-  "routes": [				
+  "routes": [
     {
-        "source": "^/salesanalytics/webapp/(.*)",
-        "localDir": "salesanalytics/webapp/",
-        "target": "$1",
-        "authenticationType": "xsuaa",
-        "csrfProtection": true
+      "source": "^/salesanalytics/webapp/(.*)",
+      "localDir": "salesanalytics/webapp/",
+      "target": "$1",
+      "authenticationType": "xsuaa",
+      "csrfProtection": true
     },
     {
       "source": "^/(.*)$",
@@ -19,7 +19,7 @@
     }
   ],
   "logout": {
-     "logoutEndpoint": "/logout",
-     "logoutPage": "https://www.anubhavtrainings.com"
+    "logoutEndpoint": "/logout",
+    "logoutPage": "https://www.anubhavtrainings.com"
   }
 }
