@@ -2,6 +2,7 @@
   "name": "anubhav-mongo",
   "version": "1.0.0",
   "dependencies": {
+    "@anubhav-cap-js/attachments": "^1.0.0",
     "@anubhav-cap-js/mongo": "^1.0.3",
     "@sap-cloud-sdk/connectivity": "^4.9.1",
     "@sap/cds": "^10",
@@ -16,7 +17,7 @@
       "anubhav-mongo": {
         "dbName": "anubhav-dev",
         "autoDeploy": true,
-        "replaceMode": true,
+        "replaceMode": false,
         "[production]": {
           "destination": "MONGO_ATLAS"
         }
@@ -33,6 +34,7 @@
   },
   "private": true,
   "sapux": [
-    "app/salesanalytics"
+    "app/salesanalytics",
+    "app/incidentmanage"
   ]
 }
