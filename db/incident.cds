@@ -1,6 +1,6 @@
 namespace anubhav.helpdesk;
 
-using { cuid, managed, sap.common.CodeList } from '@sap/cds/common';
+
 using { Attachments } from '@anubhav-cap-js/attachments';
 
 entity Incidents : cuid, managed {

@@ -1,11 +1,6 @@
 namespace anubhav.bookshop;
 
-using {
-  Currency,
-  cuid,
-  managed,
-  sap.common.CodeList
-} from '@sap/cds/common';
+
 
 /**
  * Plain CDS entities - nothing MongoDB specific is needed.
